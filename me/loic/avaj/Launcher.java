@@ -25,7 +25,7 @@ public class Launcher {
     
         if (lines.size() < 1)
             exit("Error: Input file is empty.");
-    
+
         String firstLine = lines.remove(0);
         if (firstLine.split(" ").length != 1)
             exit("Error: Invalid first line.");

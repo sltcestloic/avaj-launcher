@@ -13,5 +13,8 @@ public abstract class Aircraft {
         this.coordinates = p_coordinates;
     }
 
-    
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + "#" + this.name + " (" + this.id + ")";
+    }
 }
