@@ -1,8 +1,17 @@
 package me.loic.avaj;
 
 public class AircraftFactory {
+
+	private static AircraftFactory instance;
+
+	public static AircraftFactory getInstance() {
+		if (instance == null) {
+			instance = new AircraftFactory();
+		}
+		return instance;
+	}
     
-    public static Flyable newAircraft(String type, String name, Coordinates coordinates) throws UnknownFlyableTypeException {
+    public Flyable newAircraft(String type, String name, Coordinates coordinates) throws UnknownFlyableTypeException {
 		switch (type) {
 			case "JetPlane":
 				return new JetPlane(Launcher.nextId(), name, coordinates);

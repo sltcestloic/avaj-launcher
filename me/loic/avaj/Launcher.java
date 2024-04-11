@@ -36,7 +36,7 @@ public class Launcher {
             if (parts.length != 5)
                 exit("Error: Invalid line \"" + line + "\"");
             Coordinates coordinates = new Coordinates(Integer.parseUnsignedInt(parts[2]), Integer.parseUnsignedInt(parts[3]), Integer.parseUnsignedInt(parts[4]));
-            Flyable flyable = AircraftFactory.newAircraft(parts[0], parts[1], coordinates);
+            Flyable flyable = AircraftFactory.getInstance().newAircraft(parts[0], parts[1], coordinates);
             flyable.registerTower(tower);
         };
     
