@@ -2,7 +2,7 @@ package me.loic.avaj;
 
 public class JetPlane extends Aircraft {
 
-    protected JetPlane(long id, String name, Coordinates coordinates) {
+    public JetPlane(long id, String name, Coordinates coordinates) {
         super(id, name, coordinates);
     }
 

@@ -2,7 +2,7 @@ package me.loic.avaj;
 
 public class Baloon extends Aircraft {
 
-    protected Baloon(long id, String name, Coordinates coordinates) {
+    public Baloon(long id, String name, Coordinates coordinates) {
         super(id, name, coordinates);
     }
 
