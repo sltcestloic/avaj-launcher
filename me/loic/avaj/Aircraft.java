@@ -1,6 +1,6 @@
 package me.loic.avaj;
 
-public abstract class Aircraft {
+public class Aircraft extends Flyable {
     
     protected long id;
     protected String name;
@@ -17,4 +17,7 @@ public abstract class Aircraft {
     public String toString() {
         return this.getClass().getSimpleName() + "#" + this.name + " (" + this.id + ")";
     }
+
+    @Override
+    public void updateConditions() { }
 }
